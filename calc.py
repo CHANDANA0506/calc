@@ -1,27 +1,18 @@
-def add1(a,b):
-    return a+b
-def sub1(a,b):
-    return a-b
-def div1(a,b):
-    return a/b
-def mul(a,b):
-    return a*b
-def rem(a,b):
-    return a%b 
+import operators as op
 a=int(input("enter a number"))
 b=int(input("enter a number"))
 c=input("input a symbol")
 o=0
 if(c=='+'):
-    o=add1(a,b)
+    o=op.add1(a,b)
 elif (c=='-'):
-    o=sub1(a,b)
+    o=op.sub1(a,b)
 elif (c=='/'):
-    o=div1(a,b)
+    o=op.div1(a,b)
 elif (c=='*'):
-    o=mul(a,b)
+    o=op.mul(a,b)
 elif (c=='%'):
-    o=rem(a,b)
+    o=op.rem(a,b)
 else:
     print("input incorrect")
 print("output value is",o)
