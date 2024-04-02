@@ -6,6 +6,8 @@ def div1(a,b):
     return a/b
 def mul(a,b):
     return a*b
+def rem(a,b):
+    return a%b 
 a=int(input("enter a number"))
 b=int(input("enter a number"))
 c=input("input a symbol")
@@ -18,6 +20,8 @@ elif (c=='/'):
     o=div1(a,b)
 elif (c=='*'):
     o=mul(a,b)
+elif (c=='%'):
+    o=rem(a,b)
 else:
     print("input incorrect")
 print("output value is",o)
